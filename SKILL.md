@@ -7,13 +7,15 @@ description: Use when designing or building any page, section or component for t
 
 Built on the **Signal** starter from [web-style-guide](https://github.com/hoomanab01/web-style-guide): same structure, token names and components, re-valued for a cacao ceremony.
 
-The look: warm, deep, bold. Roasted-cacao dark background, cream text, one heart-gold accent, a soft terracotta glow in the hero. Wide, confident display type (Unbounded), calm body text (Inter), spaced uppercase mono labels (JetBrains Mono). Round shapes: pill buttons, circular marks.
+The look follows the event poster («Алхимия сердца»): candle-lit cacao dark with amber glow, cream serif capitals (Cormorant), a book serif for reading (Lora), handwritten names (Marck Script), thin gold line icons in rings, and fading gold dividers with a four-point star. Calm, warm, ceremonial. Pill buttons, round portraits.
 
 Source of truth: `assets/tokens.css` (values) and `assets/components.css` (components). The storybook (`storybook.html`) shows every token and component.
 
 ## Language
 - Pages are in Russian (`<html lang="ru">`). English is allowed for the «Inner Journey» label.
 - Fonts include Latin and Cyrillic subsets. Do not add a font without a Cyrillic subset.
+- Headings, labels and the brand are set in capitals by tokens (`--display-case`, `--label-case`); write them in normal case in the HTML.
+- The script font is for people's names only. Never for headings or body text.
 - Avoid the arrow glyph (→) in display type; write «превращается в …» instead.
 
 ## Hard rules
@@ -21,7 +23,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 2. Use existing components before inventing new ones. If a page needs something new, say so, propose it as a component, and add it to `components.css` and the storybook once agreed.
 3. One `display` or `h1` per page. Sections use `h2`, items inside sections use `h3`.
 4. One primary button per view. Button labels start with a verb (Записаться, Узнать).
-5. One inverse (gold) section per page, used for the closing call to action.
+5. One inverse (ember) section per page, used for the closing call to action.
 6. Every page works on a phone at 390px wide, with no horizontal scroll and touch targets of at least 44px.
 7. Text contrast at least 4.5:1. Errors are shown in words, not colour alone.
 8. Motion is subtle and slow: elements rise and fade in once with `data-reveal`. Respect reduced motion.
@@ -31,15 +33,16 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 
 ## Components (class names)
 - Layout: `container`, `section`, `section--surface`, `section--inverse`, `section--tight`, `section-head`, `grid grid--2|grid--3`, `split`, `stack`
-- Type: `display`, `h1`, `h2`, `h3`, `lead`, `body`, `small`, `eyebrow`, `measure`
+- Type: `display`, `h1`, `h2`, `h3`, `subtitle`, `script` (names only), `lead`, `body`, `small`, `eyebrow`, `measure`
+- Ornament: `divider` (gold lines + star), `brand__mark` (the same star)
 - Actions: `btn btn--primary`, `btn btn--secondary`, `btn-row`, `link`
-- Blocks: `nav`, `hero` (with warm glow), `hero__meta`, `page-hero`, `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
-- Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder)
+- Blocks: `nav`, `hero` (candle glow), `hero--center`, `hero__date`, `hero__meta`, `page-hero`, `section-head--center`, `card--center`, `icon-ring` (inline SVG line icon), `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
+- Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `hosts` / `host` / `host__photo`, `poster` (framed event poster)
 - Forms: `form`, `form__row`, `field`, `label`, `input`, `field__error`
 - Nav toggle labels: `data-label-open="Меню" data-label-close="Закрыть"`
 
 ## Page patterns
-- Event landing (`prototypes/home.html`): hero (eyebrow, display title, lead, two buttons, meta: date · city · format), what awaits (3 cards), the alchemy (steps), details (split: head + facts), closing CTA (inverse)
+- Event landing (`prototypes/home.html`), centred like the poster: hero (eyebrow with the three pillars, display title, subtitle, divider, date, meta: address · time, two buttons), what awaits (3 icon-ring cards), hosts (3 portraits), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
 - Pricing, about, contact: as in the Signal starter, when needed
 
 ## Before you deliver
@@ -47,7 +50,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - [ ] Phone, tablet and desktop checked; no horizontal scroll
 - [ ] One h1, one primary button per view, one inverse section
 - [ ] Contrast and form errors checked
-- [ ] Cyrillic renders in all three fonts
+- [ ] Cyrillic renders in all three fonts; numbers are lining (15:00, not old-style)
 - [ ] Placeholders replaced or clearly marked with `tbd`
 - [ ] Impressum and Datenschutz linked before the page goes live in Germany
 

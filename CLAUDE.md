@@ -3,7 +3,7 @@
 Read this first in every new chat or Claude Code session.
 
 ## What we're building
-A small website for **«Алхимия сердца» (The Alchemy of the Heart)**, an Inner Journey cacao and sound ceremony in Berlin on 29 November. Led by Светлана Делле (Света-Яра), with sound healing by Анастасия and Оксана. Audience: Russian-speaking people in Berlin. The page invites them and gets them to sign up.
+A small website for **«Алхимия сердца» (The Alchemy of the Heart)**, an Inner Journey cacao and sound ceremony in Berlin on 29 November, 15:00–18:00, Max-Steinke-Str. 6, 13086 Berlin. Led by Светлана Делле (Света-Яра), with sound healing by Анастасия and Оксана. Audience: Russian-speaking people in Berlin. The page invites them and gets them to sign up.
 
 ## Our Git
 - Design system: github.com/katerina-tech/cacao-design-system
@@ -11,6 +11,9 @@ A small website for **«Алхимия сердца» (The Alchemy of the Heart)
 - Website: github.com/katerina-tech/cacao-website (to be created)
   The pages Claude Code builds. `main` is the live site, `staging` is the rehearsal, every change goes through a pull request.
 - The design system repository is the source of truth. The website only uses what is in it.
+
+## Visual source
+The event poster (`assets/img/poster.jpg`) is the visual reference. Host portraits in `assets/img/` are cropped from it.
 
 ## Stack
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts self-hosted (Latin + Cyrillic), no requests to Google.
@@ -34,6 +37,6 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts
 - After building, run the site locally, test phone and desktop, and report what you built, what you tested and every open question, before opening a pull request.
 
 ## Current state
-- Done: Cacao design system (from the Signal starter), storybook, landing page prototype in Russian.
-- Open (marked `tbd` on the page): start time, address, price, booking link. Impressum and Datenschutz pages before going live.
+- Done: Cacao design system (from the Signal starter, restyled after the poster), storybook, landing page prototype in Russian with date, time, address and hosts.
+- Open (marked `tbd` on the page): price, booking link. Impressum and Datenschutz pages before going live.
 - Next: fill the open details, create `cacao-website`, build from `prototypes/home.html`.

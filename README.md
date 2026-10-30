@@ -1,8 +1,8 @@
 # Cacao · design system
 
-Design system and page designs for **«Алхимия сердца»**, an Inner Journey cacao and sound ceremony in Berlin (29 November).
+Design system and page designs for **«Алхимия сердца»**, a cacao, sound healing and inner work ceremony in Berlin (29 November, 15:00–18:00).
 
-Built on the **Signal** starter from [hoomanab01/web-style-guide](https://github.com/hoomanab01/web-style-guide): same file structure, token names and components, re-valued for cacao. Warm, deep and bold instead of technical.
+Built on the **Signal** starter from [hoomanab01/web-style-guide](https://github.com/hoomanab01/web-style-guide): same file structure, token names and components, restyled after the event poster.
 
 ## What's in here
 | File | What it is |
@@ -17,17 +17,19 @@ Built on the **Signal** starter from [hoomanab01/web-style-guide](https://github
 | `netlify.toml` | Publishes the folder as it is; `/` shows the landing page |
 
 ## What changed from Signal
+The look now follows the event poster.
+
 | | Signal | Cacao |
 |---|---|---|
-| Background | `#0B0D10` graphite | `#140D0A` roasted cacao |
-| Text | cool white | cream `#F2E6DA` |
-| Accent | lime `#C8F135` | heart gold `#E7B07A` |
-| Display font | Space Grotesk (no Cyrillic) | Unbounded (Latin + Cyrillic) |
-| Body / labels | Inter / JetBrains Mono, Latin only | same fonts, Latin + Cyrillic |
-| Labels | mono, sentence case | mono, uppercase, spaced |
-| Shape | 10–14px corners | pill buttons, 20px cards, round marks |
-| Hero | flat | warm terracotta glow (`--gradient-hero`) |
-| New components | | `facts` (event details), `tbd` (visible placeholder) |
+| Background | `#0B0D10` graphite | `#120A07` night cacao, amber candle glow |
+| Text | cool white | cream `#F1E3CF` |
+| Accent | lime `#C8F135` | poster gold `#DDB47C` |
+| Display | Space Grotesk (no Cyrillic) | Cormorant, in capitals (Latin + Cyrillic) |
+| Body / labels | Inter / JetBrains Mono | Lora; labels in spaced capitals |
+| Names | | Marck Script |
+| Ornament | | gold divider with a four-point star; star brand mark |
+| Closing section | lime | ember room with candle glow |
+| New components | | `subtitle`, `script`, `divider`, `icon-ring`, `hosts`, `poster`, `facts`, `tbd`, centred hero/heads |
 
 ## Preview
 Open `prototypes/home.html` or `storybook.html` in a browser. No build step.
