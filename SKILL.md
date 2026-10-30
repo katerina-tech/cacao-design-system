@@ -11,9 +11,13 @@ The look: candle-lit cacao dark, an editorial high-contrast serif in normal case
 
 Source of truth: `assets/tokens.css` (values) and `assets/components.css` (components). The storybook (`storybook.html`) shows every token and component.
 
+## Hosts
+Светлана Делле (Света-Яра) is the main host and always comes first, larger. Then Оксана, then Анастасия (sound healing).
+
 ## Language
 - Pages are in Russian (`<html lang="ru">`). English is allowed for the «Inner Journey» label.
 - Fonts include Latin and Cyrillic subsets. Do not add a font without a Cyrillic subset.
+- The title «Алхимия сердца» stays on one line; «сердца» is the italic gold accent (`<em>`).
 - Headings are in normal case (`--display-case: none`). Labels and subtitles are set in spaced capitals by `--label-case`; write everything in normal case in the HTML.
 - The script font is for people's names only. Never for headings or body text.
 - Avoid the arrow glyph (→) in display type; write «превращается в …» instead.
@@ -38,15 +42,15 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - Type: `display`, `h1`, `h2`, `h3`, `subtitle`, `script` (names only), `lead`, `body`, `small`, `eyebrow`, `measure`
 - Ornament: `divider` (gold lines + star), `brand__mark` (the same star)
 - Actions: `btn btn--primary`, `btn btn--secondary`, `btn-row`, `link`
-- Blocks: `nav`, `hero` (candle glow), `hero--photo` (photo on the right, fades in), `hero--center`, `hero__date`, `hero__meta`, `page-hero`, `section-head--center`, `card--center`, `icon-ring` (inline SVG line icon), `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
+- Blocks: `nav`, `hero` (candle glow), `hero--cinema` + `hero__frame` + `hero__facts` (full-bleed photo, gold frame, facts strip), `hero--photo` (photo on the right, fades in), `hero--center`, `hero__date`, `hero__meta`, `page-hero`, `section-head--center`, `card--center`, `icon-ring` (inline SVG line icon), `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
 - Cacao artwork: `has-cacao` (hero sides), `has-beans` (closing section corners). Original SVGs in `assets/img/`, regenerate with `tools/cacao-art.py`.
-- Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `hosts` / `host` / `host__photo`, `poster` (framed event poster)
+- Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `host-lead` (main host, larger, with text), `hosts` / `hosts--pair` / `host` / `host__photo`, `poster` (framed event poster)
 - Forms: `form`, `form__row`, `field`, `label`, `input`, `field__error`
 - Motion: `data-reveal`, `data-vanta="fog"`. Every page loads `vendor/lenis.css`, `vendor/lenis.min.js` and `motion.js` (three.js and Vanta load on demand).
 - Nav toggle labels: `data-label-open="Меню" data-label-close="Закрыть"`
 
 ## Page patterns
-- Event landing (`prototypes/home.html`): photo hero, left-aligned (eyebrow with the three pillars, display title, subtitle in spaced capitals, divider, date, meta: address · time, two buttons), what awaits (3 icon-ring cards), hosts (3 portraits), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
+- Event landing (`prototypes/home.html`): cinema hero (full-bleed chocolate photo, gold frame with eyebrow, «Алхимия *сердца*» on one line, lead, Записаться + «Что вас ждёт →», facts strip: когда · где · формат), what awaits (3 icon-ring cards), hosts (Светлана first as `host-lead`, then Оксана and Анастасия), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
 - Pricing, about, contact: as in the Signal starter, when needed
 
 ## Before you deliver
