@@ -224,3 +224,10 @@ textarea.input{min-height:160px;resize:vertical}
 .hero--photo .divider::before{display:none}
 @media (max-width:820px){.hero--photo::before{width:100%;background:var(--photo-fade-phone),var(--photo-hero) center top / cover no-repeat;-webkit-mask-image:none;mask-image:none}}
 .hero--photo .subtitle{margin-top:var(--space-2)}
+
+/* ---------- Motion: Vanta fog behind the hero, Lenis smooth scroll ---------- */
+html.lenis{scroll-behavior:auto}
+[data-vanta]{position:relative;isolation:isolate}
+[data-vanta] > .vanta-canvas{z-index:-1!important;opacity:var(--vanta-opacity)}
+.hero--photo[data-vanta]::before{z-index:0}
+.hero--photo[data-vanta] > .container{position:relative;z-index:1}

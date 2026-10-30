@@ -26,7 +26,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 5. One inverse (ember) section per page, used for the closing call to action.
 6. Every page works on a phone at 390px wide, with no horizontal scroll and touch targets of at least 44px.
 7. Text contrast at least 4.5:1. Errors are shown in words, not colour alone.
-8. Motion is subtle and slow: elements rise and fade in once with `data-reveal`. Respect reduced motion.
+8. Motion is subtle and slow: elements rise and fade in once with `data-reveal`; Lenis smooth scroll on every page (`assets/vendor/lenis.*` + `assets/motion.js`); one Vanta fog per page at most, behind the hero (`data-vanta="fog"`), wide screens only, colours from the `--vanta-*` tokens. Everything stops for visitors who prefer reduced motion.
 9. No fake testimonials, reviews, numbers or event details. Unknown values (time, address, price, booking link) stay visibly marked with `tbd` until replaced.
 10. Copy about the ceremony comes from the organisers' own text. Don't invent promises, effects or bios.
 11. Images: the organisers' own photos (the poster, host portraits), original illustrations, or photos the organisers have a licence for (the chocolate photo, `assets/img/chocolate.jpg`, was supplied by Ekaterina). No other web photos.
@@ -42,6 +42,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - Cacao artwork: `has-cacao` (hero sides), `has-beans` (closing section corners). Original SVGs in `assets/img/`, regenerate with `tools/cacao-art.py`.
 - Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `hosts` / `host` / `host__photo`, `poster` (framed event poster)
 - Forms: `form`, `form__row`, `field`, `label`, `input`, `field__error`
+- Motion: `data-reveal`, `data-vanta="fog"`. Every page loads `vendor/lenis.css`, `vendor/lenis.min.js` and `motion.js` (three.js and Vanta load on demand).
 - Nav toggle labels: `data-label-open="Меню" data-label-close="Закрыть"`
 
 ## Page patterns

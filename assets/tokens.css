@@ -126,3 +126,16 @@
   --photo-mask: linear-gradient(90deg, transparent 0%, #000 48%);
   --photo-fade-phone: linear-gradient(180deg, rgba(18,10,7,.62) 0%, rgba(18,10,7,.78) 55%, var(--color-bg) 100%);
 }
+:root{
+  /* Motion: Vanta fog in the hero (warm cacao steam) and Lenis smooth scroll */
+  --vanta-highlight: #A8521F;   /* candle flame */
+  --vanta-midtone: #5A2C15;     /* cacao */
+  --vanta-lowlight: #2A150B;    /* ember */
+  --vanta-base: #120A07;        /* night cacao */
+  --vanta-blur: 0.65;
+  --vanta-opacity: 0.6;         /* keeps small text above 4.5:1 contrast */
+  --vanta-speed: 0.7;
+  --vanta-zoom: 0.9;
+  --vanta-min-width: 821;       /* fog only on screens wider than this (px) */
+  --scroll-duration: 1.2;       /* Lenis, seconds */
+}

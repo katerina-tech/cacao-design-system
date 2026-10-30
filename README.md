@@ -12,6 +12,8 @@ Built on the **Signal** starter from [hoomanab01/web-style-guide](https://github
 | `assets/tokens.css` | All values: colours, fonts, sizes, radii, motion |
 | `assets/components.css` | All components, built from tokens only |
 | `assets/site.js` | Mobile menu and reveal-on-scroll. No dependencies. |
+| `assets/motion.js` | Lenis smooth scroll and the Vanta fog in the hero |
+| `assets/vendor/` | Lenis, three.js (r134) and Vanta fog, self-hosted (MIT licences included) |
 | `SKILL.md` | The design rules, written for Claude |
 | `CLAUDE.md` | The context file. Point every new chat or Claude Code session at it. |
 | `netlify.toml` | Publishes the folder as it is; `/` shows the landing page |
