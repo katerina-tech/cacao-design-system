@@ -24,8 +24,9 @@ The look now follows the event poster.
 | Background | `#0B0D10` graphite | `#120A07` night cacao, amber candle glow |
 | Text | cool white | cream `#F1E3CF` |
 | Accent | lime `#C8F135` | poster gold `#DDB47C` |
-| Display | Space Grotesk (no Cyrillic) | Cormorant, in capitals (Latin + Cyrillic) |
-| Body / labels | Inter / JetBrains Mono | Lora; labels in spaced capitals |
+| Display | Space Grotesk (no Cyrillic) | Playfair Display, normal case (Latin + Cyrillic) |
+| Body / labels | Inter / JetBrains Mono | Inter; labels in spaced capitals |
+| Hero | flat | chocolate & cacao photo on the right, faded in |
 | Names | | Marck Script |
 | Ornament | | gold divider with a four-point star; star brand mark |
 | Closing section | lime | ember room with candle glow |

@@ -23,7 +23,7 @@ h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
 .small{font-size:var(--text-small);color:var(--color-muted)}
 .eyebrow{font-family:var(--font-label);font-weight:var(--weight-label);font-size:var(--text-label);letter-spacing:var(--tracking-label);text-transform:var(--label-case);color:var(--color-accent-strong)}
 .measure{max-width:60ch}
-.subtitle{font-family:var(--font-display);font-weight:500;font-size:var(--text-subtitle);letter-spacing:var(--tracking-label);text-transform:var(--display-case);color:var(--color-heading);line-height:1.2}
+.subtitle{font-family:var(--font-label);font-weight:var(--weight-label);font-size:var(--text-subtitle);letter-spacing:var(--tracking-label);text-transform:var(--label-case);color:var(--color-heading);line-height:1.4}
 .script{font-family:var(--font-script);font-weight:400;font-size:var(--text-script);line-height:1.1;color:var(--color-heading);text-transform:none;letter-spacing:0}
 
 /* ---------- Ornament divider: fading gold lines with a four-point star ---------- */
@@ -213,3 +213,14 @@ textarea.input{min-height:160px;resize:vertical}
   .has-cacao::before{opacity:var(--art-opacity-phone);background-size:auto var(--art-height-phone),auto var(--art-height-phone);background-position:left -18vw bottom 0,right -18vw top 0}
   .has-beans::before{opacity:var(--art-opacity-phone)}
 }
+
+/* ---------- Photo hero: chocolate & cacao photo on the right, faded into the page ---------- */
+.hero--photo{position:relative;isolation:isolate;background:var(--color-bg)}
+.hero--photo::before{content:"";position:absolute;top:0;bottom:0;right:0;width:var(--photo-width);z-index:-1;pointer-events:none;
+  background:var(--photo-shade),var(--photo-hero) center / cover no-repeat;
+  -webkit-mask-image:var(--photo-mask);mask-image:var(--photo-mask)}
+.hero--photo .hero__inner{max-width:36rem}
+.hero--photo .divider{max-width:20rem}
+.hero--photo .divider::before{display:none}
+@media (max-width:820px){.hero--photo::before{width:100%;background:var(--photo-fade-phone),var(--photo-hero) center top / cover no-repeat;-webkit-mask-image:none;mask-image:none}}
+.hero--photo .subtitle{margin-top:var(--space-2)}
