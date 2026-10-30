@@ -19,7 +19,7 @@ The event poster (`assets/img/poster.jpg`) is the visual reference. Host portrai
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts self-hosted (Latin + Cyrillic), no requests to Google.
 
 ## Pages
-`prototypes/home.html`: the event landing page (one page, in-page anchors).
+`prototypes/home.html`: the event landing page (in-page anchors). `prototypes/impressum.html`, `prototypes/datenschutz.html`: legal pages in German. On the website, `home.html` becomes `index.html`.
 
 ## How we work: the loop
 1. Design in Claude chat: prototype the page, try versions, check phone and desktop.
@@ -40,5 +40,5 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts
 - Done: Cacao design system (from the Signal starter, restyled after the poster), storybook, landing page prototype in Russian with date, time, address and hosts.
 - Sign-up: Telegram https://t.me/katrin_berlin (all «Записаться» buttons).
 - Live: https://cacao-berlin.netlify.app (main), https://staging--cacao-berlin.netlify.app (staging).
-- Open: price (marked `tbd`); confirm the licence of the chocolate photo (`assets/img/chocolate.jpg`) and get a larger original if possible. Impressum and Datenschutz pages before going live.
+- Open: price (marked `tbd`); confirm the licence of the chocolate photo (`assets/img/chocolate.jpg`) and get a larger original if possible. Impressum and Datenschutz exist; fill in name, address, e-mail (marked `tbd`).
 - Next: fill the open details, build from `prototypes/home.html`.

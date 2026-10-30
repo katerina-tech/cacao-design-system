@@ -44,6 +44,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - Actions: `btn btn--primary`, `btn btn--secondary`, `btn-row`, `link`
 - Blocks: `nav`, `hero` (candle glow), `hero--cinema` + `hero__frame` + `hero__facts` (full-bleed photo, gold frame, facts strip), `hero--photo` (photo on the right, fades in), `hero--center`, `hero__date`, `hero__meta`, `page-hero`, `section-head--center`, `card--center`, `icon-ring` (inline SVG line icon), `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
 - Cacao artwork: `has-cacao` (hero sides), `has-beans` (closing section corners). Original SVGs in `assets/img/`, regenerate with `tools/cacao-art.py`.
+- Text pages: `prose` (headings, paragraphs, lists, address, `note`)
 - Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `host-lead` (main host, larger, with text), `hosts` / `hosts--pair` / `host` / `host__photo`, `poster` (framed event poster)
 - Forms: `form`, `form__row`, `field`, `label`, `input`, `field__error`
 - Motion: `data-reveal`, `data-vanta="fog"`. Every page loads `vendor/lenis.css`, `vendor/lenis.min.js` and `motion.js` (three.js and Vanta load on demand).
@@ -51,6 +52,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 
 ## Page patterns
 - Event landing (`prototypes/home.html`): cinema hero (full-bleed chocolate photo, gold frame with eyebrow, «Алхимия *сердца*» on one line, lead, Записаться + «Что вас ждёт →», facts strip: когда · где · формат), what awaits (3 icon-ring cards), hosts (Светлана first as `host-lead` with an arch portrait `host__photo--arch`, then Оксана and Анастасия), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
+- Legal pages (`prototypes/impressum.html`, `prototypes/datenschutz.html`): page-hero (eyebrow «Rechtliches», h1, one Russian line explaining the German), then `prose`. German text. Linked from every footer.
 - Pricing, about, contact: as in the Signal starter, when needed
 
 ## Before you deliver
