@@ -214,7 +214,7 @@ textarea.input{min-height:160px;resize:vertical}
   .has-beans::before{opacity:var(--art-opacity-phone)}
 }
 
-/* ---------- Photo hero: chocolate & cacao photo on the right, faded into the page ---------- */
+/* ---------- Photo hero: photo on the right, faded into the page ---------- */
 .hero--photo{position:relative;isolation:isolate;background:var(--color-bg)}
 .hero--photo::before{content:"";position:absolute;top:0;bottom:0;right:0;width:var(--photo-width);z-index:-1;pointer-events:none;
   background:var(--photo-shade),var(--photo-hero) center / cover no-repeat;

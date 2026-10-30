@@ -28,7 +28,7 @@ The look now follows the event poster.
 | Accent | lime `#C8F135` | poster gold `#DDB47C` |
 | Display | Space Grotesk (no Cyrillic) | Playfair Display, normal case (Latin + Cyrillic) |
 | Body / labels | Inter / JetBrains Mono | Inter; labels in spaced capitals |
-| Hero | flat | chocolate & cacao photo on the right, faded in |
+| Hero | flat | full-bleed photo of ritual cacao in a gold frame |
 | Names | | Marck Script |
 | Ornament | | gold divider with a four-point star; star brand mark |
 | Closing section | lime | ember room with candle glow |
