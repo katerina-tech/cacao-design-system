@@ -8,7 +8,7 @@ A small website for **«Алхимия сердца» (The Alchemy of the Heart)
 ## Our Git
 - Design system: github.com/katerina-tech/cacao-design-system
   Tokens (`assets/tokens.css`), components (`assets/components.css`), the storybook (`storybook.html`), the design skill (`SKILL.md`), and page designs in `prototypes/`.
-- Website: github.com/katerina-tech/cacao-website (to be created)
+- Website: github.com/katerina-tech/cacao-berlin-website
   The pages Claude Code builds. `main` is the live site, `staging` is the rehearsal, every change goes through a pull request.
 - The design system repository is the source of truth. The website only uses what is in it.
 
@@ -39,4 +39,4 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts
 ## Current state
 - Done: Cacao design system (from the Signal starter, restyled after the poster), storybook, landing page prototype in Russian with date, time, address and hosts.
 - Open (marked `tbd` on the page): price, booking link. Impressum and Datenschutz pages before going live.
-- Next: fill the open details, create `cacao-website`, build from `prototypes/home.html`.
+- Next: fill the open details, build from `prototypes/home.html`.
