@@ -12,7 +12,7 @@ The look: candle-lit cacao dark, an editorial high-contrast serif in normal case
 Source of truth: `assets/tokens.css` (values) and `assets/components.css` (components). The storybook (`storybook.html`) shows every token and component.
 
 ## Hosts
-Светлана Делле (Света-Яра) is the main host and always comes first, larger. Then Оксана, then Анастасия (sound healing).
+Светлана Делле (Светлана-Яра) is the main host and always comes first, larger. Then Оксана, then Анастасия (sound healing).
 
 ## Language
 - Pages are in Russian (`<html lang="ru">`). English is allowed for the «Inner Journey» label.
