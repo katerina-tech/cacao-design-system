@@ -150,5 +150,6 @@
   --color-frame-bg: rgba(18,10,7,.30);
   --color-frame-border: rgba(221,180,124,.45);
   --text-display-line: clamp(2.1rem, 8vw, 7rem);   /* «Алхимия сердца» on one line */
-  --size-portrait-lead: clamp(200px, 24vw, 300px);
+  --size-portrait-lead: clamp(220px, 26vw, 320px);
+  --radius-arch: 999px 999px var(--radius-card) var(--radius-card);   /* arch-shaped portrait for the lead host */
 }

@@ -13,7 +13,7 @@ A small website for **«Алхимия сердца» (The Alchemy of the Heart)
 - The design system repository is the source of truth. The website only uses what is in it.
 
 ## Visual source
-The event poster (`assets/img/poster.jpg`) is the visual reference. Host portraits in `assets/img/` are cropped from it.
+The event poster (`assets/img/poster.jpg`) is the visual reference. Host portraits: Светлана (`host-svetlana.jpg`) and Оксана (`host-oksana.jpg`) are real photos from the organisers, only cropped; Анастасия is still cropped from the poster.
 
 ## Stack
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts self-hosted (Latin + Cyrillic), no requests to Google.

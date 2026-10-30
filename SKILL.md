@@ -50,7 +50,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - Nav toggle labels: `data-label-open="Меню" data-label-close="Закрыть"`
 
 ## Page patterns
-- Event landing (`prototypes/home.html`): cinema hero (full-bleed chocolate photo, gold frame with eyebrow, «Алхимия *сердца*» on one line, lead, Записаться + «Что вас ждёт →», facts strip: когда · где · формат), what awaits (3 icon-ring cards), hosts (Светлана first as `host-lead`, then Оксана and Анастасия), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
+- Event landing (`prototypes/home.html`): cinema hero (full-bleed chocolate photo, gold frame with eyebrow, «Алхимия *сердца*» on one line, lead, Записаться + «Что вас ждёт →», facts strip: когда · где · формат), what awaits (3 icon-ring cards), hosts (Светлана first as `host-lead` with an arch portrait `host__photo--arch`, then Оксана and Анастасия), the alchemy (steps), details (split: facts + poster), closing CTA (inverse, with divider)
 - Pricing, about, contact: as in the Signal starter, when needed
 
 ## Before you deliver
