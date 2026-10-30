@@ -29,7 +29,9 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 8. Motion is subtle and slow: elements rise and fade in once with `data-reveal`. Respect reduced motion.
 9. No fake testimonials, reviews, numbers or event details. Unknown values (time, address, price, booking link) stay visibly marked with `tbd` until replaced.
 10. Copy about the ceremony comes from the organisers' own text. Don't invent promises, effects or bios.
-11. Design decisions are made in Claude chat and recorded in the design system or a prototype. When building (Claude Code), never decide design: if something isn't defined, stop and ask with two or three options.
+11. Images: only the organisers' own photos (the poster, host portraits) or original illustrations. No stock or web photos without a licence.
+12. Sign-up goes to Telegram: https://t.me/katrin_berlin (opens in a new tab). Every «Записаться» button links there.
+13. Design decisions are made in Claude chat and recorded in the design system or a prototype. When building (Claude Code), never decide design: if something isn't defined, stop and ask with two or three options.
 
 ## Components (class names)
 - Layout: `container`, `section`, `section--surface`, `section--inverse`, `section--tight`, `section-head`, `grid grid--2|grid--3`, `split`, `stack`
@@ -37,6 +39,7 @@ Source of truth: `assets/tokens.css` (values) and `assets/components.css` (compo
 - Ornament: `divider` (gold lines + star), `brand__mark` (the same star)
 - Actions: `btn btn--primary`, `btn btn--secondary`, `btn-row`, `link`
 - Blocks: `nav`, `hero` (candle glow), `hero--center`, `hero__date`, `hero__meta`, `page-hero`, `section-head--center`, `card--center`, `icon-ring` (inline SVG line icon), `card`, `card__icon`, `steps` / `step`, `price` / `price--featured`, `badge`, `list`, `quote`, `faq`, `cta`, `footer`
+- Cacao artwork: `has-cacao` (hero sides), `has-beans` (closing section corners). Original SVGs in `assets/img/`, regenerate with `tools/cacao-art.py`.
 - Event: `facts` / `facts__row` (event details as a `<dl>`), `tbd` (visible placeholder), `hosts` / `host` / `host__photo`, `poster` (framed event poster)
 - Forms: `form`, `form__row`, `field`, `label`, `input`, `field__error`
 - Nav toggle labels: `data-label-open="Меню" data-label-close="Закрыть"`

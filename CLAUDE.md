@@ -38,5 +38,7 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify. Fonts
 
 ## Current state
 - Done: Cacao design system (from the Signal starter, restyled after the poster), storybook, landing page prototype in Russian with date, time, address and hosts.
-- Open (marked `tbd` on the page): price, booking link. Impressum and Datenschutz pages before going live.
+- Sign-up: Telegram https://t.me/katrin_berlin (all «Записаться» buttons).
+- Live: https://cacao-berlin.netlify.app (main), https://staging--cacao-berlin.netlify.app (staging).
+- Open (marked `tbd` on the page): price. Impressum and Datenschutz pages before going live.
 - Next: fill the open details, build from `prototypes/home.html`.
